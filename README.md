@@ -7,7 +7,7 @@ no security system implemented.
 ## Requirements
 
 - [Github](https://github.com/)
-- [Ngrok](https://ngrok.com/) Free tunnel session of 2 hours.
+- [Ngrok](https://ngrok.com/)
 - [Node.js](https://nodejs.org/)
 
 ## Setting-up
@@ -28,7 +28,7 @@ $ npm start
 
 ### Ngrok tunnel
 
-Start a tunnel session to forward a public ip to your 
+Start a tunnel session to forward a public ip to your
 local machine on port 8080.
 
 ```bash
