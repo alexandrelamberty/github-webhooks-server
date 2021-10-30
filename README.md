@@ -17,13 +17,13 @@ no security system implemented.
 Install the dependencies
 
 ```bash
-$ npm install
+npm install
 ```
 
 Start the Node.js server
 
 ```bash
-$ npm start
+npm start
 ```
 
 ### Ngrok tunnel
@@ -32,12 +32,12 @@ Start a tunnel session to forward a public ip to your
 local machine on port 8080.
 
 ```bash
-$ ./ngrok http 8080
+./ngrok http 8080
 ```
 
 You will see something like this
 
-```
+```bash
 ngrok by @inconshreveable                                                                                          (Ctrl+C to quit)
 
 Session Status                online
@@ -54,12 +54,10 @@ Connections                   ttl     opn     rt1     rt5     p50     p90
 
 Grab your public ip from one of thoses two lines. ie: `http(s)://42b7-2a02-a03f-c95e-8d00-7fb5-9a63-5577-e6f9.ngrok.io`
 
-```
+```bash
 Forwarding                    http://42b7-2a02-a03f-c95e-8d00-7fb5-9a63-5577-e6f9.ngrok.io -> http://localhost:8080
 Forwarding                    https://42b7-2a02-a03f-c95e-8d00-7fb5-9a63-5577-e6f9.ngrok.io -> http://localhost:8080
 ```
-
-You can check out the Ngrok interface at <http://127.0.0.1:4040>
 
 You can check out the Ngrok interface at <http://127.0.0.1:4040>
 
