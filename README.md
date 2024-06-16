@@ -1,3 +1,5 @@
+[![Node.js CI](https://github.com/alexandrelamberty/github-webhooks-server/actions/workflows/nodejs.yaml/badge.svg)](https://github.com/alexandrelamberty/github-webhooks-server/actions/workflows/nodejs.yaml)
+
 # GitHub Webhooks Server
 
 This project sets up a local server to receive GitHub Webhook requests, using
