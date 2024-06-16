@@ -1,4 +1,5 @@
 require("dotenv").config();
+const { processPayload } = require("./process-payload");
 const express = require("express"),
   http = require("http"),
   path = require("path");
@@ -15,19 +16,14 @@ app.get("/", function (req, res) {
 });
 
 app.post("/payload", function (req, res, next) {
-  console.log(`${new Date().toISOString()} :: Payload received`);
+  console.log(`Payload received`);
   const payload = req.body;
   processPayload(payload);
   res.status(200).end();
 });
 
-app.listen(8080, () => {
-  console.log(`Github Webhook listening at http://localhost:8080`);
+const server = app.listen(8090, () => {
+  console.log(`Github Webhook listening at http://localhost:8090`);
 });
 
-const processPayload = (payload) => {
-  console.log(`${new Date().toISOString()} :: Payload processing \n`, payload);
-  // Update a repository
-  // Build and deploy containers based on repository
-  // Analyze and process repository content
-};
+module.exports = { app, server };
