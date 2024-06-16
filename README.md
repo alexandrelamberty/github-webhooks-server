@@ -14,11 +14,13 @@ Ngrok to expose the local server to the internet.
 ### Node.js Server
 
 1. **Install the dependencies**:
+
    ```bash
    npm install
    ```
 
 2. **Start the Node.js server**:
+
    ```bash
    npm start
    ```
@@ -26,12 +28,14 @@ Ngrok to expose the local server to the internet.
 ### Ngrok Tunnel
 
 1. **Start a tunnel session**:
+
    ```bash
    ./ngrok http 8080
    ```
 
 2. **Note the forwarding URLs**:
    After starting Ngrok, you will see output similar to the following:
+
    ```plaintext
    ngrok by @inconshreveable                                                                                          (Ctrl+C to quit)
 
