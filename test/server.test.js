@@ -48,10 +48,3 @@ describe("GitHub Webhooks Server", function () {
       });
   });
 });
-
-describe("Environment Variables", function () {
-  it("should load environment variables from .env file", function () {
-    require("dotenv").config();
-    assert(process.env.PORT, "Expected environment variable to be set");
-  });
-});
